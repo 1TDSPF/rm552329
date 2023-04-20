@@ -49,10 +49,57 @@
     <footer class="rodape">
         <h2>Fale Conosco</h2>
         <nav>
-            <a href="#"><img src="./img/social-1.png" alt="Github"> </a>
+            <!-- <a href="#"><img src="./img/social-1.png" alt="Github"> </a>
             <a href="#"><img src="./img/social-2.png" alt="Facebook"></a>
-            <a href="#"><img src="./img/social-3.png" alt="Twitter"></a>
+            <a href="#"><img src="./img/social-3.png" alt="Twitter"></a> -->
         </nav>
+        <div action="index.html" method="GET" onsubmit="return true">
+        <fieldset>
+            <legend>Contato</legend>
+            <div>
+                <label for="idEmail">Email</label>
+                <input type="text" name="txtEmail" id="idEmail" placeholder="Email" pattern="[A-Za-z]{6}">
+                <!--<input type="text" name="txtEmail" id="idEmail" placeholder="Email" pattern="[0-9]{5}">-->
+                 </div>
+            <div>
+                <label for="idNm">Nome</label>
+                <input type="text" name="txtNm" id="idNm" placeholder="Nome">
+            </div>
+            <div>
+                <label for="idPass">Senha</label>
+                <input type="password" name="txtPass" id="idPass" placeholder="Pass"
+                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Precisa conter no mínimo 8 caracteres e um maíusculo e pelo menos um em minusculo.">
+             </div>
+            <div>
+                <label for="idGrava">Gravar Dados</label>
+                <input type="checkbox" name="chbGrava" id="idGrava" value="gravar">
+            </div>
+            <!--<div>
+                <fieldset>
+                    <legend>Gênero</legend>
+                    <label for="idRdbM">Masculino</label>
+                    <input type="radio" name="rdb" id="rdbM" value="m" checked="checked">
+                    <label for="idRbdF">Feminino</label>
+                    <input type="radio" name="rdb" id="rdbF" value="F">
+                    <label for="idRbdO">Outros</label>
+                    <input type="radio" name="rdb" id="rdbO" value="O">
+                </fieldset>
+            </div>-->
+            <div>
+                <label for="idGenero">Gênero</label>
+                <select name="selGenero" id="idGenero">
+                <option selected="selected" value="-">Selecione uma opção</option>
+                <option value="m"> Masculino</option>
+                <option value="f"> Feminino</option>
+                <option value="o"> Outros</option></select>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+           
+        </fieldset></div>
     </footer>
 </body>
 </html>
