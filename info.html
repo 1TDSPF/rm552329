@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My-Layout</title>
+    <title>Info</title>
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
@@ -12,39 +12,77 @@
     <header class="cabecalho">
         <img src="./img/logo.png" alt="Monitor de computador.">
         <nav>
-             <a href="./index.html">Home</a>
+            <a href="./index.html">Home</a>
             <a href="./info.html">Info</a>
             <a href="#">Item-3</a>
         </nav>
     </header>
 
-    <h2 class="tit-sec">Seção de Fotos</h2>
+    <h2 class="tit-sec">INFORMATIVOS SOBRE OS LOBOS</h2>
     <section class="conteudo"> 
         <div>
             <img src="./img/lobo1.jpg" alt="Lobo">
-            <p>Legenda</p>
-       </div>
-        <div>
-            <img src="./img/lobo2.jpg" alt="Lobo">
-            <p>Legenda</p>
-        </div>
-        <div>
-            <img src="./img/lobo3.jpg" alt="Lobo">
-            <p>Legenda</p>
-       </div>
-        <div>
-            <img src="./img/lobo4.jpg" alt="Lobo">        
-            <p>Legenda</p>
-       </div>
-        <div>
-            <img src="./img/lobo5.jpg" alt="Lobo">
-            <p>Legenda</p>
-        </div>
-        <div>
-            <img src="./img/lobo6.jpg" alt="Lobo">
-           <p>Legenda</p>
-     </div>
+            <p>Espécies ameaçadas</p>
+       </div>      
     </section>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Nome científico</th>
+            <th>Espécies</th>
+            <th>Habitat</th>
+            <th>Pelagem</th>
+            <th>Incidência</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Canis Lupus</td>
+            <td>Canídeo</td>
+            <td>Florestas</td>
+            <td>Cinzento</td>
+            <td>América do Norte</td>
+        </tr>
+        <tr>
+            <td>Canis Rufus</td>
+            <td>Canídeo</td>
+            <td>Florestas</td>
+            <td>Vermelho</td>
+            <td>América do Norte</td>
+        </tr>
+        <tr>
+            <td>Chrysocyon brachyurus</td>
+            <td>Canídeo</td>
+            <td>Cerrado e pampas</td>
+            <td>Marron</td>
+            <td>América do Sul</td>
+        </tr>
+        <tr>
+            <td>Vulpes vulpes</td>
+            <td>Canídeo</td>
+            <td>Tundra</td>
+            <td>Marrom</td>
+            <td>América do Norte / Europa / Ásia</td>
+        </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <td colspan="2">A</td>
+      <!--  <td>B</td>-->
+        <td>C</td>
+        <td>D</td>
+        <td rowspan="2">E</td>
+    </tr>
+    <tr>
+        <td>F</td>
+        <td>G</td>
+        <td>H</td>
+        <td>I</td>
+      <!--  <td>J</td>-->
+    </tr>
+</tfoot>
+    </table>
 
     <footer class="rodape">
         <h2>Fale Conosco</h2>
