@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,99 +8,94 @@
     <title>My-Layout</title>
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
+
 <body>
-    
+
     <header class="cabecalho">
         <img src="./img/logo.png" alt="Monitor de computador.">
         <nav>
-             <a href="./index.html">Home</a>
-            <a href="./info.html">Info</a>
+            <a href="#">Item-1</a>
+            <a href="#">Item-2</a>
             <a href="#">Item-3</a>
         </nav>
     </header>
 
-    <h2 class="tit-sec">Seção de Fotos</h2>
-    <section class="conteudo"> 
+    <h2 class="tit-sec"> Seção de Fotos</h2>
+
+    <section class="conteudo">
         <div>
-            <img src="./img/lobo1.jpg" alt="Lobo">
-            <p>Legenda</p>
-       </div>
-        <div>
-            <img src="./img/lobo2.jpg" alt="Lobo">
+            <img src="./img/lobo1.jpg" alt="Um lobo">
             <p>Legenda</p>
         </div>
         <div>
-            <img src="./img/lobo3.jpg" alt="Lobo">
-            <p>Legenda</p>
-       </div>
-        <div>
-            <img src="./img/lobo4.jpg" alt="Lobo">        
-            <p>Legenda</p>
-       </div>
-        <div>
-            <img src="./img/lobo5.jpg" alt="Lobo">
+            <img src="./img/lobo2.jpg" alt="Um lobo">
             <p>Legenda</p>
         </div>
         <div>
-            <img src="./img/lobo6.jpg" alt="Lobo">
-           <p>Legenda</p>
-     </div>
+            <img src="./img/lobo3.jpg" alt="Um lobo">
+            <p>Legenda</p>
+        </div>
+        <div>
+            <img src="./img/lobo4.jpg" alt="Um lobo">
+            <p>Legenda</p>
+        </div>
+        <div>
+            <img src="./img/lobo5.jpg" alt="Um lobo">
+            <p>Legenda</p>
+        </div>
+        <div>
+            <img src="./img/lobo6.jpg" alt="Um lobo">
+            <p>Legenda</p>
+        </div>
     </section>
 
     <footer class="rodape">
         <h2>Fale Conosco</h2>
         <nav>
-            <!-- <a href="#"><img src="./img/social-1.png" alt="Github"> </a>
-            <a href="#"><img src="./img/social-2.png" alt="Facebook"></a>
-            <a href="#"><img src="./img/social-3.png" alt="Twitter"></a> -->
+            <!--<a href="#"><img src="./img/social-1.png" alt="logo github"></a>
+            <a href="#"><img src="./img/social-2.png" alt="logo facebook"></a>
+            <a href="#"><img src="./img/social-3.png" alt="logo Twitter"></a>-->
         </nav>
-        <div action="index.html" method="GET" onsubmit="return true">
-        <fieldset>
-            <legend>Contato</legend>
-            <div>
-                <label for="idEmail">Email</label>
-                <input type="text" name="txtEmail" id="idEmail" placeholder="Email" pattern="[A-Za-z]{6}">
-                <!--<input type="text" name="txtEmail" id="idEmail" placeholder="Email" pattern="[0-9]{5}">-->
-                 </div>
-            <div>
-                <label for="idNm">Nome</label>
-                <input type="text" name="txtNm" id="idNm" placeholder="Nome">
-            </div>
-            <div>
-                <label for="idPass">Senha</label>
-                <input type="password" name="txtPass" id="idPass" placeholder="Pass"
-                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                title="Precisa conter no mínimo 8 caracteres e um maíusculo e pelo menos um em minusculo.">
-             </div>
-            <div>
-                <label for="idGrava">Gravar Dados</label>
-                <input type="checkbox" name="chbGrava" id="idGrava" value="gravar">
-            </div>
-            <!--<div>
+
+        <div>
+            <form action="index.html" method="POST" onsubmit="return true">
                 <fieldset>
-                    <legend>Gênero</legend>
-                    <label for="idRdbM">Masculino</label>
-                    <input type="radio" name="rdb" id="rdbM" value="m" checked="checked">
-                    <label for="idRbdF">Feminino</label>
-                    <input type="radio" name="rdb" id="rdbF" value="F">
-                    <label for="idRbdO">Outros</label>
-                    <input type="radio" name="rdb" id="rdbO" value="O">
+                    <legend>Login</legend>
+                    <div> 
+                        <label for="idEmail">Email</label> 
+                        <input type="email" name="txtEmail" id="idEmail" placeholder="Email" required> 
+                        </div>
+                    <div> 
+                        <label for="idPass">Senha</label> 
+                        <input type="password" name="txtPass" id="idPass" placeholder="Pass" pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}"
+                            title="Precisa conter no mínimo 8 caractéres e um em maiusculo e pelo menos um em minusculo.">
+                    </div>
+                    <div> 
+                        <label for="idGrava">Gravar Dados</label> 
+                        <input type="checkbox" name="chbGrava" id="idGrava" value="gravar"> 
+                    </div>
+                    <div> 
+                        <fieldset>
+                            <legend>Genêro</legend>
+                        <select name="selGenero" id="idGenero">
+                            <option selected="selected" value="-">Selecione uma opção</option>
+                            <option value="m">Masculino</option>
+                            <option value="f">Feminino</option>
+                            <option value="o">Outros</option>
+                        </select> 
+                        </fieldset>
+                    </div>
+                    <div> 
+                        <button type="submit">Login</button> 
+                        <button type="reset">Limpar</button>
+                    </div>
+
                 </fieldset>
-            </div>-->
-            <div>
-                <label for="idGenero">Gênero</label>
-                <select name="selGenero" id="idGenero">
-                <option selected="selected" value="-">Selecione uma opção</option>
-                <option value="m"> Masculino</option>
-                <option value="f"> Feminino</option>
-                <option value="o"> Outros</option></select>
-            </div>
-            <div>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
-            </div>
-           
-        </fieldset></div>
+            </form>
+
+        </div>
     </footer>
+
 </body>
+
 </html>
