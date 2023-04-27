@@ -7,6 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My-Layout</title>
     <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/script.js"> </script>
+
+<!-- 
+     <script>
+        //Comentario de linha
+        /*
+        Comentario de bloco
+        */
+
+       //Declarando variaveis com a palavra reservada var
+       var nr1 = 10;
+       var nr2 = 5;
+      // Realizando a soma dos valores direto
+       console.log(nr1 + nr2);
+
+       var nr3 = "10";
+       var nr4 = "5";
+       
+       console.log(nr3+nr4);
+        //Utilizando uma função interna de parsearento
+       console.log(parseInt(nr3)+ parseInt(nr4));
+        // Realizando a soma dos valores direto
+        console.log("Resultado: " + (parseInt(nr3) - parseInt(nr4)));
+        
+        
+
+       </script>-->
 </head>
 
 <body>
@@ -58,15 +85,15 @@
         </nav>
 
         <div>
-            <form action="index.html" method="POST" onsubmit="return true">
+            <form action="index.html" method="POST" onsubmit="return false">
                 <fieldset>
                     <legend>Login</legend>
                     <div> 
-                        <label for="idEmail">Email</label> 
+                        <label class="lbl-text" for="idEmail">Email</label> 
                         <input type="email" name="txtEmail" id="idEmail" placeholder="Email" required> 
                         </div>
                     <div> 
-                        <label for="idPass">Senha</label> 
+                        <label class="lbl-text" for="idPass">Senha</label> 
                         <input type="password" name="txtPass" id="idPass" placeholder="Pass" pattern="(?=.\d)(?=.[a-z])(?=.*[A-Z]).{8,}"
                             title="Precisa conter no mínimo 8 caractéres e um em maiusculo e pelo menos um em minusculo.">
                     </div>
@@ -85,8 +112,8 @@
                         </select> 
                         </fieldset>
                     </div>
-                    <div> 
-                        <button type="submit">Login</button> 
+                    <div class="btn"> 
+                        <button onclick="document.write('Olá Mundo!')" type="submit">Login</button> 
                         <button type="reset">Limpar</button>
                     </div>
 
@@ -95,7 +122,38 @@
 
         </div>
     </footer>
+    <!-- 
+    <script>
+        //Comentario de linha
+        /*
+        Comentario de bloco
+        */
 
+       //Declarando variaveis com a palavra reservada var
+       var nr1 = 10;
+       var nr2 = 5;
+      // Realizando a soma dos valores direto
+       console.log(nr1 + nr2);
+
+       var nr3 = "10";
+       var nr4 = "5";
+       
+       console.log(nr3+nr4);
+        //Utilizando uma função interna de parsearento
+        //Realizando a soma dos valores direto
+       console.log(parseInt(nr3)+ parseInt(nr4));
+        // Realizando a subtração dos valores direto
+        console.log("Resultado da subtração: " + (parseInt(nr3) - parseInt(nr4)));
+        
+        // Realizando a divisão dos valores direto
+        console.log("Resultado da divisão: " + (parseInt(nr3) / parseInt(nr4)));
+        
+        // Realizando o processo para recuperar o resto da divisão
+    console.log(`Resultado resto da divisão de ${nr3} por ${nr4} = ${parseInt(nr3)} % ${parseInt(nr4)}`);
+
+          
+
+       </scrip>-->
 </body>
 
 </html>
