@@ -102,3 +102,33 @@
 // frutas.splice(indice,2);
 // console.table(frutas)
 // console.log("Item que ficou no local após a remoção : " + frutas[indice])
+
+// let nr1 = [1,2,3,4,5];
+// let nr2 = [6,7,8,9,10]
+// console.log(nr1);
+// console.log(nr2);
+
+// //Concatenando arrays
+// let nr3 = [nr1,nr2]
+// console.log("Novo array: " + nr3);
+
+// //imprimindo o array concatenado com forEach
+// nr3.forEach((nr)=>{
+//     nr.forEach((n)=>{      
+//    console.log("Item do novo array " + n);
+//    })
+ 
+// });
+
+let nr1 = [1,2,3,4,5];
+let nr2 = [6,7,8,9,10]
+console.log(nr1);
+console.log(nr2);
+
+//Concatenando arrays com o operador spread(...) - ele pega e espalha dentro dos arrays, colocando um por um
+
+let nr3 = [...nr1,...nr2];
+//imprimindo o array concatenado com forEach
+nr3.forEach((nr)=>{      
+   console.log("Item do novo array " + nr); 
+});
