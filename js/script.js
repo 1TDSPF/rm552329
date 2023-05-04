@@ -120,15 +120,27 @@
  
 // });
 
-let nr1 = [1,2,3,4,5];
-let nr2 = [6,7,8,9,10]
-console.log(nr1);
-console.log(nr2);
+// let nr1 = [1,2,3,4,5];
+// let nr2 = [6,7,8,9,10]
+// console.log(nr1);
+// console.log(nr2);
 
-//Concatenando arrays com o operador spread(...) - ele pega e espalha dentro dos arrays, colocando um por um
+// //Concatenando arrays com o operador spread(...) - ele pega e espalha dentro dos arrays, colocando um por um
 
-let nr3 = [...nr1,...nr2];
-//imprimindo o array concatenado com forEach
-nr3.forEach((nr)=>{      
-   console.log("Item do novo array " + nr); 
-});
+// let nr3 = [...nr1,...nr2];
+// //imprimindo o array concatenado com forEach
+// nr3.forEach((nr)=>{      
+//    console.log("Item do novo array " + nr); 
+// });
+
+//Tem uma característica de lista, porém não é uma array
+const imgElements = document.getElementsByTagName("img");
+console.log(imgElements);
+
+//Convertendo HTMLCollection em arrays
+const imgElementsArray = [...imgElements]
+imgElementsArray.forEach((img)=>{
+   img.setAttribute("width", "5%")
+})
+console.log(imgElementsArray)
+
