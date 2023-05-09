@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2%;
+    font-size: 52px;   
+}
+#btn1{
+    display: block;
+    margin: 2% auto;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    font-size: 20px; 
+}
+form{
+    margin:0 auto;
+    padding: 5%;
+}
+fieldset{
+    display: flex;
+    margin: 0 20% auto;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    font-size: 25px;
+    flex-direction: column; 
+}
+input{
+    margin: 0 auto;
+    width: 30rem;
+    height: 2rem;
+}
+div.label-email{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+div.btn-form{
+    padding: 2%;
+}
+
+div.btn-form button{
+    font-size: 20px;
+    width: 20rem;
+    padding: 2%;
+    font-weight: 700;
+    
+}
