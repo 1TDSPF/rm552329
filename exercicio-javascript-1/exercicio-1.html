@@ -10,11 +10,14 @@
 </head>
 
 <body>
+    <header class="cabecalho">
     <h1>Exercícios de web</h1>
+</header>
+
+    
     <div>
-        <button id="btn-cor">Clique aqui</button>
+        <button id="btn-cor">Mudar cor de fundo</button>
     </div>
-    <hr><br><br>
     <form action="exercicio-1.html" method="POST" onsubmit="return false">
         <fieldset>
             <div class="label-email">
@@ -27,19 +30,20 @@
         </fieldset>
     </form>
 
-    <div class="btn-img">
-        <img src="" alt="">
-        <button>Trocar imagem</button>
-    </div>
+    <div id="btn-troca">
+        <button>Tocar no esquilo</button>
+        <div id="btn-img">
+            <img src="./esquilo1.jpg" alt="Esquilo">
+        </div> </div>
 
-    <div class="btn-exibir">
+    <div id="btn-exibir">
         <button>Clique para aparecer</button>
         <p></p>
     </div>
 
-    <div class="btn-oculta">
-        <img src="" alt="">
-        <button>Ocultar elemento</button>
+    <div id="btn-oculta">
+        <button>Ocultar Guaxinim</button>
+        <img id="imagem-oculta"src="./guaxinim-oculto.jpeg" alt="Animal que some">
     </div>
 </body>
 
