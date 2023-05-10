@@ -20,31 +20,40 @@
     </div>
     <form action="exercicio-1.html" method="POST" onsubmit="return false">
         <fieldset>
-            <div class="label-email">
-                <label class="lbl-txt" for="idEmail">Email: </label>
-                <input type="email" name="txtEmail" id="idEmail" placeholder="Email" required>
+            <div class="label-animal">
+                <label class="lbl-txt" for="idAnimal">Digite nomes de animais: </label>
+                <input type="text" name="txtAnimal" id="idAnimal">
             </div>
             <div class="btn-form">
-                <button type="submit">Enviar</button>
+                <button id="btnEnviar" type="submit">Enviar</button>
             </div>
+            
         </fieldset>
-    </form>
+       
+      </form>
+      <div class="lista">
+        <ul id="listaAnimais"></ul>
+    </div>
+    
+      
 
     <div id="btn-troca">
         <button>Tocar no esquilo</button>
-        <div id="btn-img">
+        <div id="img-troca">
             <img src="./esquilo1.jpg" alt="Esquilo">
         </div> </div>
 
     <div id="btn-exibir">
-        <button>Clique para aparecer</button>
-        <p></p>
+        <button>Clique aqui para o aparecer</button>
+         <p id="mensagem"></p>
     </div>
 
     <div id="btn-oculta">
-        <button>Ocultar Guaxinim</button>
-        <img id="imagem-oculta"src="./guaxinim-oculto.jpeg" alt="Animal que some">
+        <button>Ocultar/Surgir Guaxinim</button>
+        <div id="img-container">
+        <img id="img-oculta"src="./guaxinim-oculto.jpeg" alt="Animal que some">
     </div>
+</div>
 </body>
 
 </html>
