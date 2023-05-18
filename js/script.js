@@ -148,10 +148,39 @@
 //Identifique aquelas que são pertencentes somente ao cabeçalho e adicione o atributo style com a propriedade background-color: #ff0000;
 
 
-const aElements = [...document.getElementsByTagName("a")];
-aElements.forEach((a)=>{
-   let textoDoA = a.textContent;
-   if(textoDoA == "Item-1" || textoDoA == "Item-2" || textoDoA == "Item-3"){
-      a.setAttribute("style", "background-color:#ff0000;")
-   }
-})
+// const aElements = [...document.getElementsByTagName("a")];
+// aElements.forEach((a)=>{
+//    let textoDoA = a.textContent;
+//    if(textoDoA == "Item-1" || textoDoA == "Item-2" || textoDoA == "Item-3"){
+//       a.setAttribute("style", "background-color:#ff0000;")
+//    }
+// })
+//CRIANDO A AUTENTICAÇÃO PELO TOKEN
+if(localStorage.getItem("token-user") != null){
+
+   //RECUPERANDO O H1 QUE VAI APRESENTAR O USUÁRIO!
+   const msgStatus = document.querySelector("#msg"); 
+   const avatar = document.querySelector("#imgAvatar"); 
+    
+   //RECUPERANDO O OBJETO DO USUÁRIO-VALIDADO LOGADO NO LOCAL-STORAGE
+   const usuarioValidado = JSON.parse(localStorage.getItem("user-validado"));
+
+   //APRESENTANDO UMA DOS ATRIBUTOS DO OBJETO
+   msgStatus.innerHTML = usuarioValidado.nomeCompleto
+   avatar.setAttribute("src", usuarioValidado.usuarioAvatar);
+
+   //BOTAO LOGOUT
+   const botaoSair = document.querySelector("#btnSair");
+   botaoSair.setAttribute("style", "display:block") 
+   botaoSair.addEventListener("click", ()=>{
+
+      //REMOVENDO O TOKEN E O USUÁRIO-VALIDADO DO LOCAL-STORAGE
+      localStorage.removeItem("token-user");
+      localStorage.removeItem("user-validado");
+      //APÓS DESLOGAR O USUÁRIO É REDIRECIONADO PARA A PAGINA DE LOGIN NOVAMENTE
+      window.location.href ="../login.html"
+   })
+}else{
+   window.location.href ="../login.html"
+}
+
