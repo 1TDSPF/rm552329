@@ -1,24 +1,19 @@
-//Criando uma função para receber o botão
+function insereNumero(botao,visor) {
+    
+    if(botao.value == "+" || botao.value == "-" || botao.value == "*" || botao.value == "/"){
+       
+        if(visor.value[visor.value.length-1] == "+" ||  visor.value[visor.value.length-1] == "-" || visor.value[visor.value.length-1] == "*" || visor.value[visor.value.length-1] == "/"){
+            visor.value.slice(visor.value.length-1);
+        }else{
+            visor.value += botao.value;
+        }
 
-function insereNumero(botao,visor){
-    visor.value += botao.value;
+    }else{
+        visor.value += botao.value;
+    }
 
 }
 
-// function resultado(visor){
-//     let novoVisor = visor.value.split("+")
-//     let resultadoOperacao = 0;
-
-//     novoVisor.forEach((nr)=>{
-//         resultadoOperacao += parseInt(nr);
-//     })
-//     console.log(resultadoOperacao)    
-// }
-
-function resultado(visor){
-
-    let soma = visor.value.split("+")
-    console.log(soma);
-    let subtracao = visor.value.split("-")
-    console.log(subtracao);      
+function resultado(visor) {
+    visor.value = eval(visor.value);
 }
